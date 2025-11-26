@@ -20,6 +20,7 @@ function calcular() {
     // alterar a imagem em função do resultado
     if (imc <= 17) {
         document.getElementById('status').src = "./img/imc1.png"
+        
     }
     else if (imc <= 18.5) {
         document.getElementById('status').src = "./img/imc2.png"
