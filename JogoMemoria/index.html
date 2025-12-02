@@ -2,20 +2,27 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memoria</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Jogo da Memória</title>
+
+  <!-- Arquivo de estilo CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="carta">
-            <div class="centro" id="centroCarta"></div>
-        </div>
-        <button onclick="sortear()">Sortear Carta</button>
-    </div>
-    <script src="app.js"></script>
-</body>
 
+  <div class="container">
+    <h1>Jogo da Memória</h1>
+
+    <!-- Área onde TODAS as cartas vão aparecer -->
+    <div class="centro" id="centro"></div>
+
+    <!-- Botões -->
+    <button onclick="sortear()">Sortear Cartas</button>
+    <button onclick="limparMesa()">Virar Todas Para Baixo</button>
+  </div>
+
+  <!-- Arquivo com o JavaScript -->
+  <script src="app.js"></script>
+</body>
 </html>

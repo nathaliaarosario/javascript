@@ -1,70 +1,46 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
+body {
+  background: #b60d0d; /* fundo vermelho escuro */
+  font-family: sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-body {
-    background-color: #b60d0d;
-    font-family: sans-serif;
-}
-
-button {
-    padding: 10px 30px;
-    background-color: #016309;
-    border: 1.5px solid #ffffff;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px;
-}
-
-.carta {
-    width: 250px;
-    height: 350px;
-    background-color: #fff;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    /* Efeito 3D */
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
-    /* position 
-        fixed: fixa o elemnto no documento
-        relative: referência para o absolute
-        absolute: fixa o elemento de acordo a referência ao relative
-
-        neste exemplo os elementos absolute vão se posicionar na classe carta e não na classe container ou no documento
-    */
-    position: relative;
-}
-
-.canto {
-    position: absolute;
-    text-align: center;
-    font-size: 2rem;
-}
-
-#supEsq {
-    top: 20px;
-    left: 15px;
-}
-
-#infDir {
-    bottom: 25px;
-    right: 15px;
-    transform: rotate(180deg);
+  text-align: center; /* tudo centralizado */
+  margin-top: 20px;
 }
 
 .centro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 6rem;
+  /* grade com 4 colunas de cartas */
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 15px; /* espaço entre cartas */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo da carta virada para baixo */
+.carta {
+  width: 90px;
+  height: 120px;
+  background: #016309; /* cor do verso */
+  border-radius: 10px;
+  font-size: 45px;
+  color: transparent; /* esconde a fruta */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  transition: 0.3s; /* animação suave */
+}
+
+/* Carta virada para cima (mostra a fruta) */
+.carta.virada {
+  background: white;
+  color: black;
+}
+
+/* Quando o par é encontrado */
+.carta.completa {
+  background: #1e9b54;
+  color: white;
 }

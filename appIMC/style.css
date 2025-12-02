@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-image:
+        linear-gradient(rgba(116, 176, 4, 0.642), rgba(255, 255, 255, 0.571)),
+        url("./img/comida_saudadevel.jpg");
+    /* background-size: cover; */
+    background-position: center;
+}
