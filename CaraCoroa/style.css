@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    background-color: #fffb90;
+    font-family: sans-serif;
+}
+
+#escolha {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #766510;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Mantém o resto igual ao seu CSS */
+
+
+/* botões */
+#limpar,
+#jogar {
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border: 1.5px solid #766510;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+    margin-top: 10px;
+}
+
+
+.moeda {
+    width: 120px;
+    height: 120px;
+    background-color: #6c6767d3;
+    border-radius: 50%;
+    /* torna um círculo */
+    border: 5px solid #c09e2e;
+    margin-bottom: 50px;
+    /* centraliza o emoji dentro do círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    position: relative;
+}
+
+/* Os dois lados da moeda (um de cada vez é exibido) */
+#cara,
+#coroa {
+    position: absolute;
+    display: none;
+    /* Esconde tudo até sortear */
+}

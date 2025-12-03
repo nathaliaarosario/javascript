@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memoria</title>
+    <title>Jogo Caça Níquel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <h1>Caça Níquel</h1>
     <div class="container">
-        <div class="carta">
-            <div class="centro" id="centroCarta"></div>
+        <div class="cartas">
+            <div id="carta1" class="centro"></div>
+            <div id="carta2" class="centro"></div>
+            <div id="carta3" class="centro"></div>
         </div>
-        <button onclick="sortear()">Sortear Carta</button>
+        <button onclick="sortear()">Sortear Cartas</button>
     </div>
+
     <script src="app.js"></script>
+
 </body>
 
 </html>
