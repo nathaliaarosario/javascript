@@ -13,8 +13,14 @@
 }
 
 body {
-    background-color: #fffb90;
+    background-color: #f0eda4;
     font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #6c6767d3;
+    margin-top: 20px;
 }
 
 #escolha {
@@ -30,8 +36,7 @@ body {
 
 
 /* botões */
-#limpar,
-#jogar {
+#limpar {
     padding: 10px 30px;
     background-color: #ffffff;
     border: 1.5px solid #766510;
@@ -41,6 +46,15 @@ body {
     margin-top: 10px;
 }
 
+#jogar {
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border: 1.5px solid #766510;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+    margin-top: 10px;
+}
 
 .moeda {
     width: 120px;
@@ -60,9 +74,13 @@ body {
 }
 
 /* Os dois lados da moeda (um de cada vez é exibido) */
-#cara,
+#cara {
+    position: absolute;
+    display: none;
+}
+
 #coroa {
     position: absolute;
     display: none;
-    /* Esconde tudo até sortear */
+
 }

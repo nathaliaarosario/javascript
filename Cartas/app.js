@@ -29,17 +29,49 @@ function sortear() {
     // console.log(face)
     // _________________________________
 
+    // Determinar a cor com base no naipe sorteado
+    let cor
+    if (nipe === "♥" || nipe === "♦") {
+        cor = "#ff0000"
+    } else {
+        cor = "#000"
+    }
+
     // Renderização do canto superior esquerdo da carta
     // .innerHTML - Insere uma tag no documento HTML 
     // `` - concatenação
     // *document.getElementById('supEsq').innerHTML* - vai inserir dentro de (supEsq) uma `<div>${face}</div> <div>${nipe}</div>`(que é o sorteio das faces e nipes)
     document.getElementById('supEsq').innerHTML = `<div>${face}</div> <div>${nipe}</div>`
+    // Mudar a cor (O JacvaScript consegue manipular o css usando .style)
+    document.getElementById('supEsq').style.color = cor
 
     // Renderização do canto centro da carta 
-    document.getElementById('centroCarta').innerHTML = `<div>${nipe}</div>`
+    // document.getElementById('centroCarta').innerHTML = `<div>${nipe}</div>`
+
+    let cc = document.getElementById
+        ('centroCarta')
+    if (face === 'J') {
+        cc.innerHTML = `<img src="./img/valete.png">`
+
+    } if (face === 'Q') {
+        cc.innerHTML = `<img src="./img/dama.png">`
+
+    }
+    if (face === 'K') {
+        cc.innerHTML = `<img src="./img/rei.png">`
+
+    }
+    else {
+        cc.innerHTML = nipe
+        cc.style.color = cor
+    }
 
     // Renderização do canto inferior da carta 
     document.getElementById('infDir').innerHTML = `<div>${face}</div> <div>${nipe}</div>`
+
+    document.getElementById('infDir').style.color = cor
+
+
 
 }
 

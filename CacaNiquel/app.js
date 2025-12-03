@@ -42,7 +42,7 @@ function sortear() {
     if (sorteio1 === sorteio2 && sorteio2 === sorteio3 && sorteio1 === sorteio3) {
         setTimeout(() => {
             alert("🎉 VOCÊ GANHOU!");
-        }, 290); // tempo em milissegundos
+        }, 290); // conta o tempo em milissegundos
     }
 
 

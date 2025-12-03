@@ -1,6 +1,6 @@
 /**
  * Cara ou Coroa
- * Escolha → se acertar, ganha!
+ * @author Nathalia Alves Rosario
  */
 
 function jogar() {
@@ -27,7 +27,7 @@ function jogar() {
 
     let resultado;
 
-    // Mostra a figura sorteada
+    // mostrar figura sorteada
     if (sorteio === 0) {
         document.getElementById("cara").style.display = "block";
         resultado = "cara";
@@ -43,13 +43,13 @@ function jogar() {
         }, 290); // tempo em milissegundos
     } else {
         setTimeout(() => {
-            alert("🎉 VOCÊ PERDEU!");
+            alert("VOCÊ PERDEU!");
         }, 290); // tempo em milissegundos
     }
 }
 
 function limpar() {
-    // Esconder lados
+    // Esconder os lados
     //document.getElementById("cara").-> pega o elemento HTML que tem id="cara".
     //.style.display = "none"; -> não apaga o elemento, só o esconde da tela.
     document.getElementById("cara").style.display = "none"; 
