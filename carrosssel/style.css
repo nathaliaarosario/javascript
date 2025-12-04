@@ -1,0 +1,28 @@
+/*  (*) Aplica isso a todos navegadores   */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Efeito fade manipulando pelo JS (o JS vai adicionar essa classe de nome .fadeout)*/
+#slides.fadeout {
+    /* deixa a iamgem transparente*/
+    opacity: 0.03;
+    /* ajustar a opacidade */
+}
+
+#slides {
+    transition: opacity 2s;
+    /* ajuste  junto com JS*/
+    opacity: 1;
+    /* Deixa a imagem solida*/
+}
